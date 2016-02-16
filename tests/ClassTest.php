@@ -9,14 +9,14 @@
 		{
 				//Arrange
 				$test_Anagram_Detector = new AnagramDetector;
-				$input = 'abc';
-				$otherwords = 'abc';
+				$input = "ahyrt";
+				$otherwords = "tryha";
 
 				//Act
 				$result = $test_Anagram_Detector->checkAnagram($input, $otherwords);
 
 				//Assert
-				$this->assertEquals('a', $result);
+				$this->assertEquals("It is an Anagram", $result);
 		}
 	}
 
